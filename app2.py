@@ -83,10 +83,10 @@ st.image(image,use_column_width=True)
 
 st.markdown("""
 This web page leverages deep learning to classify vehicle images as:
-* Saloon
-* Bus
+
 * Truck
-* Nissan / Van
+* Bus
+* Other
 """
 )
 
