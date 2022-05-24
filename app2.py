@@ -104,14 +104,12 @@ with st.spinner('Classifying...'):
         # Convert the file to an opencv image.
         file_bytes = np.asarray(bytearray(vehicle_image.read()), dtype=np.uint8)
         opencv_image = cv2.imdecode(file_bytes, 1)
+        
+        # Displaying the image
+        st.image(opencv_image, channels="BGR",width=512)
 
         ## Pre-process imput using keras
         opencv_image = preprocess_input(opencv_image)
-
-
-
-        # Displaying the image
-        st.image(opencv_image, channels="BGR",width=512)
         
         #Resizing the image
         opencv_image = cv2.resize(opencv_image, (256,256))
