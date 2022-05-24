@@ -3,7 +3,7 @@
 import numpy as np
 import os
 import keras
-from keras.preprocessing.image import img_to_array, load_img
+from tensorflow.keras.utils import img_to_array
 from keras.models import load_model
 from keras.applications.vgg19 import preprocess_input
 import streamlit as st
